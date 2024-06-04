@@ -1,0 +1,15 @@
+class Usuario:
+  def __init__(self, usuario, senha):
+    self._usuario = usuario
+    self._senha = senha
+
+  def cadastrar_usuario(self):
+    print("Cadastrando usuário...") 
+
+  def alterar_senha(self, nova_senha):
+    self._senha = nova_senha
+    print("Senha alterada com sucesso!")
+
+usuario = Usuario("Cléber", "cleber2015")
+usuario.alterar_senha("novasenha")
+print(usuario)
